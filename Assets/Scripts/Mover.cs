@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField] float xValue = 0.05f;
-    [SerializeField] float zValue = 0.05f;
+    [SerializeField] float moveSpeed = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -16,9 +15,9 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float xMovement = Input.GetAxis("Horizontal");
-        float zMovement = Input.GetAxis("Vertical");
+        float xMovement = Input.GetAxis("Horizontal") * Time.deltaTime;
+        float zMovement = Input.GetAxis("Vertical") * Time.deltaTime;
 
-        transform.Translate(xMovement * xValue, 0.0f, zMovement * zValue);
+        transform.Translate(xMovement * moveSpeed, 0.0f, zMovement * moveSpeed);
     }
 }
