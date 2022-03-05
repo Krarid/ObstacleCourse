@@ -233,7 +233,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xValue: 0
-  yValue: 0
   zValue: 0.05
 --- !u!1001 &1017829370
 PrefabInstance:
@@ -252,7 +251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2780621913559976690, guid: e379cc964440b404985ae42626651b8f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.52
+      value: -28.77
       objectReference: {fileID: 0}
     - target: {fileID: 2780621913559976690, guid: e379cc964440b404985ae42626651b8f, type: 3}
       propertyPath: m_LocalRotation.x
